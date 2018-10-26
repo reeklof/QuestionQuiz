@@ -1,35 +1,32 @@
 body {
-    font-size: 20px;
-    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #7e857a;
+    background: #f7f4e3;
 }
 
-#submit {
-    font-family: arial; 
-    color: purple; 
-    padding: 20px;
+h1 {
+    font-size: 50px;
+    text-align: center;
 }
 
-#submit:hover {
-    background-color: pink;
+h3 {
+    text-align: center;
+    font-size: 15px;
 }
 
 .card {
-  /* Add shadows to create the "card" effect */
+  color: #373640;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
+  transition: 0.2s;
   border-radius: 5px; /* 5px rounded corners */
   margin: 6px 4em;
+  background-color: #f7d3ba;
 }
-/* On mouse-over, add a deeper shadow */
+
 .card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 8px 36px 0 rgba(0,0,0,0.2);
 }
-/* Add some padding inside the card container */
+
 .container {
     padding: 2px 16px;
-}
-/* Add rounded corners to the top left and the top right corner of the image */
-img {
-  border-radius: 5px 5px 0 0;
-  width: 15%;
 }

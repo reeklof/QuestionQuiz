@@ -1,5 +1,6 @@
 var request = new XMLHttpRequest();
 var response;
+var score = 0;
 
 document.addEventListener('DOMContentLoaded', function (){
 request.onreadystatechange = function() {
@@ -17,11 +18,6 @@ request.onreadystatechange = function() {
           card.classList.add("card"); 
           card.id = index;
           content.appendChild(card); 
-
-          //img
-          var img = document.createElement("img");
-          img.src ="https://png2.kisspng.com/sh/3cd2b017b2abad66a64daeedbd0377ca/L0KzQYm3WcAyN5pqepH0aYP2gLBuTgRzfZYyhAQ2ZnHvg7a0lQJqfppmRdhqY4T2PbT2jgB2fJZ3Rdtsb372PbTzigAuaaN5RdN5cHH2ebK0kCR2bJp0RdN3ZILyebW0ggBxe15miOJ3YYqwc7F0TcVjQJJqTKM6OUnlQIiCTsM3PWY8Uak5MUW2RYm5WcAxQWc3Uac3cH7q/kisspng-true-or-false-trivia-facts-computer-icons-clip-art-appasia-studio-android-apps-appnaz-com-5b8ae41199b079.3655797015358290096295.png";
-          card.appendChild(img);
 
           //questions
           var title = document.createElement("h4");
@@ -45,9 +41,7 @@ request.onreadystatechange = function() {
             card.appendChild(knapp);
           }
 
-          var score = 0;
-
-          //eventListener till knapparna and keep score
+          //eventListener: buttons, score and that only one button could be clicked in a q. 
           function answerLi() {
             var buttons = document.getElementsByClassName("buttons")
             for (var i = 0; i < buttons.length; i++) {
